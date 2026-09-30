@@ -1,0 +1,49 @@
+# secrets / credentials
+.env
+*.ovpn
+*.p12
+*.pem
+
+# python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+dist/
+build/
+
+# third-party baseline clones (heimdall-pentest, CyberPenda) — 研读用,不进库
+refs/
+
+# os / editor
+.DS_Store
+.idea/
+.vscode/
+
+# val mission 引擎工作区:notes/flags/http-log 会含目标标识(IP/域名),
+# 不入库(章程纪律 5);plan/mission.py/timeline/复盘脱敏后入库
+val/**/notes.md
+val/**/flags.json
+val/**/http-log.jsonl
+val/**/recon-state.jsonl
+val/**/conversation.json
+val/**/session.json
+val/**/tmp/
+
+# runs/ 同 val:CLI 直跑的引擎产物含目标标识,不入库
+runs/**/notes.md
+runs/**/flags.json
+runs/**/http-log.jsonl
+runs/**/recon-state.jsonl
+runs/**/conversation.json
+runs/**/session.json
+runs/**/tmp/
+runs/**/experience-pending.jsonl
+.omc/
+
+# ===== 纯净版排除(2026-09-29):以下为内部资产,不入公开仓库 =====
+CLAUDE.md
+docs/
+val/
+runs/
+.claude/
